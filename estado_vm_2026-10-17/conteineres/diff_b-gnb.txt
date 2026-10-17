@@ -1,0 +1,7 @@
+C /tmp
+A /tmp/UERANSIM.proc-table
+A /tmp/UERANSIM.proc-table/1b47f639cfc05fd24ba784688621bfff
+A /tmp/UERANSIM.proc-table/26fc96f2fb4fa2b1391286de7a6473fe
+C /ueransim
+C /ueransim/config
+A /ueransim/config/gnb.yaml

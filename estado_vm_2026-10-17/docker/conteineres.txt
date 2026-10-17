@@ -1,0 +1,14 @@
+b-upf	ambiente_5g-b-upf	Up 2 days
+b-ue	ambiente_5g-b-ueransim-ue	Up 2 days
+b-gnb	ambiente_5g-b-ueransim-gnb	Up 2 days
+b-5gc-ausf	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-udm	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-amf	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-nssf	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-udr	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-smf	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-pcf	gradiant/open5gs:2.7.6	Up 2 days
+b-5gc-scp	gradiant/open5gs:2.7.6	Up 2 days
+b-dn	alpine:latest	Up 2 days
+b-mongodb	mongo:7.0	Up 2 days (healthy)
+b-5gc-nrf	gradiant/open5gs:2.7.6	Up 2 days

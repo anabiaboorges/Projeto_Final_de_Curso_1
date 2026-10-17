@@ -1,0 +1,22 @@
+# debian.sh --arch 'amd64' out/ 'bullseye' '@1751241600'
+ARG version=2.7.6
+ENV VERSION=2.7.6
+LABEL org.opencontainers.image.authors=Carlos Giraldo <cgiraldo@gradiant.org> org.opencontainers.image.vendor=Gradiant org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.7.6
+RUN |1 version=2.7.6 /bin/sh -c DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y     curl     libtalloc2     libgnutls30     libgcrypt20     libssl1.1     libbson-1.0-0     libtins4.0     libcurl4-gnutls-dev     libyaml-0-2     libmongoc-1.0-0     libsctp1     libidn11     libcurl4     libmicrohttpd12     libnghttp2-14     wondershaper iproute2 iputils-ping procps net-tools iptables iperf iperf3 traceroute tcpdump &&     rm -rf /var/lib/apt/lists/* # buildkit
+ENV APP_ROOT=/opt/open5gs
+COPY /opt/open5gs /opt/open5gs # buildkit
+RUN |1 version=2.7.6 /bin/sh -c cd ${APP_ROOT}/lib && ln -s $(uname -m)-linux-gnu/freeDiameter . # buildkit
+ENV PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOME=/opt/open5gs
+WORKDIR /opt/open5gs
+COPY entrypoint.sh /entrypoint.sh # buildkit
+RUN |1 version=2.7.6 /bin/sh -c groupadd -r open5gs && useradd --no-log-init -r -g open5gs open5gs # buildkit
+RUN |1 version=2.7.6 /bin/sh -c chown -R open5gs:open5gs ${APP_ROOT} # buildkit
+USER open5gs
+ENV DB_URI=mongodb://mongo/open5gs
+ENV IPV4_TUN_SUBNET=10.45.0.0/16 IPV4_TUN_ADDR=10.45.0.1/16 IPV6_TUN_ADDR=cafe::1/64 ENABLE_NAT=true
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/bin/bash"]
+ENV DEBIAN_FRONTEND=noninteractive
+USER root
+RUN /bin/sh -c apt-get update && apt-get install -y     iproute2     iptables     iputils-ping     tcpdump     clang     llvm     libbpf-dev     libbpfcc-dev     bpfcc-tools     bpftool     gcc-10     python3-bpfcc     && ln -s /usr/bin/gcc-10 /usr/local/bin/gcc     && apt-get clean     && rm -rf /var/lib/apt/lists/* # buildkit
+WORKDIR /etc/open5gs

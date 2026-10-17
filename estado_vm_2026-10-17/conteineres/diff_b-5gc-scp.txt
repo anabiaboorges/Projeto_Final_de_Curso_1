@@ -1,0 +1,6 @@
+C /opt
+C /opt/open5gs
+C /opt/open5gs/var
+C /opt/open5gs/var/log
+C /opt/open5gs/var/log/open5gs
+A /opt/open5gs/var/log/open5gs/scp.log

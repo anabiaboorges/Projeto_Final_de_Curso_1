@@ -1,0 +1,2 @@
+C /tmp
+A /tmp/mongodb-27017.sock

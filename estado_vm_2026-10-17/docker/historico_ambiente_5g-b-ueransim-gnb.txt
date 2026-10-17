@@ -1,0 +1,11 @@
+/bin/sh -c #(nop)  ARG RELEASE
+/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH
+/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04
+/bin/sh -c #(nop) ADD file:14c8897ef5107db11b35f5a0c05bdcb883c0a6daa83d07d4439865541f08514c in / 
+/bin/sh -c #(nop)  CMD ["/bin/bash"]
+RUN /bin/sh -c apt-get update && apt-get install -y     libsctp-dev     lksctp-tools     iproute2     iperf3     tcpdump     iputils-ping     python3     && apt-get clean # buildkit
+COPY /UERANSIM/build /ueransim/build # buildkit
+COPY /UERANSIM/config /ueransim/config # buildkit
+COPY urllc_generator.py /ueransim/build/ # buildkit
+COPY embb_generator.py /ueransim/build/ # buildkit
+WORKDIR /ueransim/build

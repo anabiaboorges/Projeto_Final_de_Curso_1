@@ -1,0 +1,460 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "dbfa290e94fe90feb8866108b27bc86e597e31d9385bda4785cc09953c535fe2",
+        "Created": "2026-10-15T23:04:51.153356017Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {},
+        "Containers": {},
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.17.0.0/16": {
+                        "IPsInUse": 3,
+                        "DynamicIPsAvailable": 65533
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "host",
+        "Id": "6004e48efeed5c9b557fc1ca07fd64ae907cf902ecd1a97f06a17b0f26265e92",
+        "Created": "2026-04-17T20:10:43.85820486Z",
+        "Scope": "local",
+        "Driver": "host",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": null
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {},
+        "Status": {
+            "IPAM": {}
+        }
+    },
+    {
+        "Name": "interface-n2",
+        "Id": "0e37c27bf3758ac2bf3724e82d8728cdcfe4fd0cc2c4156097a187144267ba48",
+        "Created": "2026-06-10T14:25:38.067646038Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.120.0.0/16",
+                    "Gateway": "10.120.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "51ff9b749660bd8f15d96ca1d2ce77dcdfb2c540c0c868882c3401440fcbe920",
+            "com.docker.compose.network": "b-net-n2",
+            "com.docker.compose.project": "ambiente_5g",
+            "com.docker.compose.version": "5.1.3"
+        },
+        "Containers": {
+            "835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894": {
+                "Name": "b-5gc-amf",
+                "EndpointID": "9bd5a6d038f72313b05b01f164649ce178d9288465ff8401e53350ba2931638f",
+                "MacAddress": "02:7b:d3:f9:45:b3",
+                "IPv4Address": "10.120.0.11/16",
+                "IPv6Address": ""
+            },
+            "848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6": {
+                "Name": "b-gnb",
+                "EndpointID": "cfa8ba91f69aa9b6c5a87c87e141ed0b53d514db58a1171df20ce36b2b217721",
+                "MacAddress": "2e:56:03:5e:0e:15",
+                "IPv4Address": "10.120.0.100/16",
+                "IPv6Address": ""
+            },
+            "fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a": {
+                "Name": "b-ue",
+                "EndpointID": "4df0d1eb0aff5a6f193c5189e66fc939acaf83fe2e0ec26fd9440967a168eaa1",
+                "MacAddress": "6a:52:9e:17:32:0e",
+                "IPv4Address": "10.120.0.200/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.120.0.0/16": {
+                        "IPsInUse": 6,
+                        "DynamicIPsAvailable": 65530
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "interface-n3",
+        "Id": "f3f06ef4aacc676172544f5dc913f29f17dc2e5b035099c17394a24a56726506",
+        "Created": "2026-06-10T14:25:38.108200725Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.130.0.0/16",
+                    "Gateway": "10.130.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "94e39b9c456b675aa63546e5274eefb933f169f360ccdcf6a8a81bc838def203",
+            "com.docker.compose.network": "b-net-n3",
+            "com.docker.compose.project": "ambiente_5g",
+            "com.docker.compose.version": "5.1.3"
+        },
+        "Containers": {
+            "848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6": {
+                "Name": "b-gnb",
+                "EndpointID": "8b7880794eef6150bd3fe2312cda02dd16e061a2b9b07051eac7eb5bbd7e7a9a",
+                "MacAddress": "92:09:f7:f2:0f:6f",
+                "IPv4Address": "10.130.0.100/16",
+                "IPv6Address": ""
+            },
+            "90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081": {
+                "Name": "b-upf",
+                "EndpointID": "a9c781216f3ace25ec6f4daad801d93ef5e96e686a32a8571b2d0ea355edd70d",
+                "MacAddress": "7e:f6:cb:9f:a3:6a",
+                "IPv4Address": "10.130.0.21/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.130.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "interface-n4",
+        "Id": "90573d16a7c508ca329275bc52f2855d48b94b5bd94a1f8808dcf789192419b9",
+        "Created": "2026-06-10T14:25:38.147838676Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.140.0.0/16",
+                    "Gateway": "10.140.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "2f1271dd718a59382c7270b231663ee3912fdca8a5ad4da34dac33c0147a72a0",
+            "com.docker.compose.network": "b-net-n4",
+            "com.docker.compose.project": "ambiente_5g",
+            "com.docker.compose.version": "5.1.3"
+        },
+        "Containers": {
+            "90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081": {
+                "Name": "b-upf",
+                "EndpointID": "ec61dbba31852d75207db3da9bfe2f0ef227098a5914bb7939c9a76ea49ee75a",
+                "MacAddress": "b2:de:90:b0:0d:47",
+                "IPv4Address": "10.140.0.21/16",
+                "IPv6Address": ""
+            },
+            "d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582": {
+                "Name": "b-5gc-smf",
+                "EndpointID": "d116716b37287d41e49b6ae22d23d0b56c1e6b2685e629245d1d2fb5e08da9ec",
+                "MacAddress": "5e:4d:c1:ea:43:b9",
+                "IPv4Address": "10.140.0.12/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.140.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "interface-n6",
+        "Id": "0fc4dd6529306dcf01a0d13237eb9ec6557088d8c137a5ae1d43a11312fcca27",
+        "Created": "2026-06-10T14:25:38.128168459Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.150.0.0/16",
+                    "Gateway": "10.150.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "8e4b947af4e6dbd503daceff0dfb42b5e7c4ba34231d3e23912e81e0a1dffc8c",
+            "com.docker.compose.network": "b-net-n6",
+            "com.docker.compose.project": "ambiente_5g",
+            "com.docker.compose.version": "5.1.3"
+        },
+        "Containers": {
+            "90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081": {
+                "Name": "b-upf",
+                "EndpointID": "403d14a517a2bdc6147156d3936331d592828a1f9d45070fabf57594a3e44bea",
+                "MacAddress": "a6:3e:f0:a0:90:d6",
+                "IPv4Address": "10.150.0.21/16",
+                "IPv6Address": ""
+            },
+            "a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9": {
+                "Name": "b-dn",
+                "EndpointID": "93e8f4b301ab05b2482a995a76791107b92dd30729181a296f60a80bae4c3984",
+                "MacAddress": "ae:04:82:d5:9f:93",
+                "IPv4Address": "10.150.0.100/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.150.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "interface-sbi",
+        "Id": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+        "Created": "2026-06-10T14:25:38.088555661Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.110.0.0/16",
+                    "Gateway": "10.110.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "12f5e46b851beadc963a153733fbf29949a45bf80ff80bedb9940259573eb2b4",
+            "com.docker.compose.network": "b-net-sbi",
+            "com.docker.compose.project": "ambiente_5g",
+            "com.docker.compose.version": "5.1.3"
+        },
+        "Containers": {
+            "0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09": {
+                "Name": "b-mongodb",
+                "EndpointID": "370051bb71a6ae13847a4410e25d55cd404481eea4d9b033422a69f0b8bdc09b",
+                "MacAddress": "36:5a:d4:95:85:97",
+                "IPv4Address": "10.110.0.20/16",
+                "IPv6Address": ""
+            },
+            "15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5": {
+                "Name": "b-5gc-scp",
+                "EndpointID": "3e42aac85c77e79c11c444d774e66895d27ea648f7343487007578f8052b6137",
+                "MacAddress": "f6:21:72:b9:ba:a0",
+                "IPv4Address": "10.110.0.200/16",
+                "IPv6Address": ""
+            },
+            "2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84": {
+                "Name": "b-5gc-udm",
+                "EndpointID": "4af53bd7b0a9ee973d8d1396caf16bd28f894418590999e3d66714e48e0b3f13",
+                "MacAddress": "42:85:d2:3e:e3:a5",
+                "IPv4Address": "10.110.0.14/16",
+                "IPv6Address": ""
+            },
+            "7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea": {
+                "Name": "b-5gc-ausf",
+                "EndpointID": "49093876c4e67b2cc4fe813e5ab55a21ff6dcfe41d0f6289ddd76d1077dd92e6",
+                "MacAddress": "22:93:4f:4d:b1:fe",
+                "IPv4Address": "10.110.0.13/16",
+                "IPv6Address": ""
+            },
+            "835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894": {
+                "Name": "b-5gc-amf",
+                "EndpointID": "3ce58f70278063cd421177c980b01552450a1ae9441d32a34535f95146001d46",
+                "MacAddress": "22:5b:eb:7a:0c:89",
+                "IPv4Address": "10.110.0.11/16",
+                "IPv6Address": ""
+            },
+            "8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429": {
+                "Name": "b-5gc-pcf",
+                "EndpointID": "96e688c0e23b335dbdb51ef3d78543c1f9932595c9af593360d073719336640c",
+                "MacAddress": "3e:97:ea:9c:0f:f5",
+                "IPv4Address": "10.110.0.16/16",
+                "IPv6Address": ""
+            },
+            "a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0": {
+                "Name": "b-5gc-udr",
+                "EndpointID": "4587b02e969d9ecaacb22c35b3cb0bcd29e85ee1567face3960ddd4ac0ab698d",
+                "MacAddress": "12:cd:1b:c2:48:86",
+                "IPv4Address": "10.110.0.15/16",
+                "IPv6Address": ""
+            },
+            "cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3": {
+                "Name": "b-5gc-nrf",
+                "EndpointID": "150231095edaa552da656a305a6e650d007876b29cca28d04929df629a7507d0",
+                "MacAddress": "76:3c:77:c8:34:ff",
+                "IPv4Address": "10.110.0.10/16",
+                "IPv6Address": ""
+            },
+            "cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6": {
+                "Name": "b-5gc-nssf",
+                "EndpointID": "63ac14e89a28feb535a1602e3f9df17c85c6fa119215f5ab6a13a60b69654baf",
+                "MacAddress": "a6:20:65:55:1f:ff",
+                "IPv4Address": "10.110.0.17/16",
+                "IPv6Address": ""
+            },
+            "d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582": {
+                "Name": "b-5gc-smf",
+                "EndpointID": "f196def211dab6c6ec955d6d692a76c4dc552fea9f413d2b2dab226abeb8eeea",
+                "MacAddress": "c6:7c:ba:23:9f:82",
+                "IPv4Address": "10.110.0.12/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.110.0.0/16": {
+                        "IPsInUse": 13,
+                        "DynamicIPsAvailable": 65523
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Name": "none",
+        "Id": "e16aeaced2c61b6ecd043ef778bb668d3604870d27ef06540f25cd4c490170a0",
+        "Created": "2026-04-17T20:10:43.856747371Z",
+        "Scope": "local",
+        "Driver": "null",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": null
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {},
+        "Status": {
+            "IPAM": {}
+        }
+    }
+]
