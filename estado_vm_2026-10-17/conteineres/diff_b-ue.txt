@@ -1,0 +1,10 @@
+C /etc
+C /etc/iproute2
+C /etc/iproute2/rt_tables
+C /ueransim
+C /ueransim/config
+A /ueransim/config/ue.yaml
+C /tmp
+A /tmp/UERANSIM.proc-table
+A /tmp/UERANSIM.proc-table/02fdc35a71d1c0571583ac9aaddeaee4
+A /tmp/UERANSIM.proc-table/70c352dbe2e9d22569fd98a8abbd50f2

@@ -1,0 +1,7 @@
+C /etc
+C /etc/open5gs
+A /etc/open5gs/upf.yaml
+C /opt
+A /opt/bcc
+C /lib
+A /lib/modules

@@ -1,0 +1,385 @@
+name: ambiente_5g
+services:
+  b-amf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-amfd
+      - -c
+      - /etc/open5gs/amf.yaml
+    container_name: b-5gc-amf
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: amf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-n2:
+        ipv4_address: 10.120.0.11
+      b-net-sbi:
+        ipv4_address: 10.110.0.11
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /home/bianca/ambiente_5g/config_open5gs/amf.yaml
+        target: /etc/open5gs/amf.yaml
+        bind: {}
+  b-ausf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-ausfd
+    container_name: b-5gc-ausf
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: ausf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.13
+    restart: unless-stopped
+  b-dn:
+    cap_add:
+      - NET_ADMIN
+    cpuset: 6,7
+    command:
+      - sh
+      - -c
+      - apk add --no-cache iperf3 iputils && ip route add 10.45.0.0/16 via 10.150.0.21 && tail -f /dev/null
+    container_name: b-dn
+    hostname: dn
+    image: alpine:latest
+    networks:
+      b-net-n6:
+        ipv4_address: 10.150.0.100
+    restart: unless-stopped
+  b-mongodb:
+    cpuset: 0,1
+    container_name: b-mongodb
+    environment:
+      MONGO_INITDB_DATABASE: open5gs
+      TZ: America/Recife
+    hostname: mongodb
+    healthcheck:
+      test:
+        - CMD
+        - mongosh
+        - --eval
+        - db.adminCommand('ping')
+      timeout: 5s
+      interval: 10s
+      retries: 5
+      start_period: 10s
+    image: mongo:7.0
+    networks:
+      b-net-sbi:
+        aliases:
+          - mongo
+        ipv4_address: 10.110.0.20
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: mongodb-data
+        target: /data/db
+        volume: {}
+      - type: volume
+        source: mongodb-config
+        target: /data/configdb
+        volume: {}
+  b-nrf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-nrfd
+    container_name: b-5gc-nrf
+    hostname: nrf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.10
+    restart: unless-stopped
+  b-nssf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-nssfd
+    container_name: b-5gc-nssf
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: nssf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.17
+    restart: unless-stopped
+  b-pcf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-pcfd
+    container_name: b-5gc-pcf
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: pcf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.16
+    restart: unless-stopped
+  b-scp:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-scpd
+    container_name: b-5gc-scp
+    depends_on:
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: scp
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.200
+    restart: unless-stopped
+  b-smf:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-smfd
+      - -c
+      - /etc/open5gs/smf.yaml
+    container_name: b-5gc-smf
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: smf
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-n4:
+        ipv4_address: 10.140.0.12
+      b-net-sbi:
+        ipv4_address: 10.110.0.12
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /home/bianca/ambiente_5g/config_open5gs/smf.yaml
+        target: /etc/open5gs/smf.yaml
+        bind: {}
+  b-udm:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-udmd
+    container_name: b-5gc-udm
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: udm
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.14
+    restart: unless-stopped
+  b-udr:
+    cpuset: 0,1
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-udrd
+    container_name: b-5gc-udr
+    depends_on:
+      b-mongodb:
+        condition: service_healthy
+        required: true
+      b-nrf:
+        condition: service_started
+        required: true
+    hostname: udr
+    image: gradiant/open5gs:2.7.6
+    networks:
+      b-net-sbi:
+        ipv4_address: 10.110.0.15
+    restart: unless-stopped
+  b-ueransim-gnb:
+    build:
+      context: /home/bianca/ambiente_5g/config_ueransim
+      dockerfile: Dockerfile
+    cap_add:
+      - NET_ADMIN
+    cpuset: 4,5
+    command:
+      - ./nr-gnb
+      - -c
+      - /ueransim/config/gnb.yaml
+    container_name: b-gnb
+    depends_on:
+      b-amf:
+        condition: service_started
+        required: true
+    networks:
+      b-net-n2:
+        ipv4_address: 10.120.0.100
+      b-net-n3:
+        ipv4_address: 10.130.0.100
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /home/bianca/ambiente_5g/config_ueransim/gnb.yaml
+        target: /ueransim/config/gnb.yaml
+        bind: {}
+  b-ueransim-ue:
+    build:
+      context: /home/bianca/ambiente_5g/config_ueransim
+      dockerfile: Dockerfile
+    cpuset: 6,7
+    command:
+      - ./nr-ue
+      - -c
+      - /ueransim/config/ue.yaml
+    container_name: b-ue
+    depends_on:
+      b-ueransim-gnb:
+        condition: service_started
+        required: true
+    devices:
+      - source: /dev/net/tun
+        target: /dev/net/tun
+        permissions: rwm
+    networks:
+      b-net-n2:
+        ipv4_address: 10.120.0.200
+    privileged: true
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    volumes:
+      - type: bind
+        source: /home/bianca/ambiente_5g/config_ueransim/ue.yaml
+        target: /ueransim/config/ue.yaml
+        bind: {}
+  b-upf:
+    build:
+      context: /home/bianca/ambiente_5g/config_upf
+      dockerfile: Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    cpuset: 2,3
+    command:
+      - /entrypoint.sh
+      - /opt/open5gs/bin/open5gs-upfd
+      - -c
+      - /etc/open5gs/upf.yaml
+    container_name: b-upf
+    networks:
+      b-net-n3:
+        ipv4_address: 10.130.0.21
+      b-net-n4:
+        ipv4_address: 10.140.0.21
+      b-net-n6:
+        ipv4_address: 10.150.0.21
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /home/bianca/ambiente_5g/config_upf/upf.yaml
+        target: /etc/open5gs/upf.yaml
+        bind: {}
+      - type: bind
+        source: /sys/fs/bpf
+        target: /sys/fs/bpf
+        bind: {}
+      - type: bind
+        source: /lib/modules
+        target: /lib/modules
+        read_only: true
+        bind: {}
+      - type: bind
+        source: /sys/kernel/btf
+        target: /sys/kernel/btf
+        read_only: true
+        bind: {}
+      - type: bind
+        source: /usr/src
+        target: /usr/src
+        read_only: true
+        bind: {}
+      - type: bind
+        source: /sys/kernel/debug
+        target: /sys/kernel/debug
+        bind: {}
+      - type: bind
+        source: /opt/bcc
+        target: /opt/bcc
+        read_only: true
+        bind: {}
+networks:
+  b-net-n2:
+    name: interface-n2
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.120.0.0/16
+          gateway: 10.120.0.1
+  b-net-n3:
+    name: interface-n3
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.130.0.0/16
+          gateway: 10.130.0.1
+  b-net-n4:
+    name: interface-n4
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.140.0.0/16
+          gateway: 10.140.0.1
+  b-net-n6:
+    name: interface-n6
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.150.0.0/16
+          gateway: 10.150.0.1
+  b-net-sbi:
+    name: interface-sbi
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.110.0.0/16
+          gateway: 10.110.0.1
+volumes:
+  mongodb-config:
+    name: ambiente_5g_mongodb-config
+    driver: local
+  mongodb-data:
+    name: ambiente_5g_mongodb-data
+    driver: local

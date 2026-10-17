@@ -1,0 +1,7 @@
+REPOSITORY                   TAG       DIGEST                                                                    IMAGE ID       CREATED         SIZE
+ambiente_5g-b-ueransim-gnb   latest    sha256:6f1d6486c5e5a3d3fd16a98567e87f7670b15789a4f86398cc4aef2b2d0a5fdb   6f1d6486c5e5   4 months ago    367MB
+ambiente_5g-b-ueransim-ue    latest    sha256:0a563b238faf0a535a8c45318f1dca65f31fa6175efad9c96cbf2ae0f31a319a   0a563b238faf   4 months ago    367MB
+ambiente_5g-b-upf            latest    sha256:4382e594480c2e25ff7866fe8bfd88a0c894502a6fbc8831ab4db2c831ed6a16   4382e594480c   4 months ago    1.4GB
+mongo                        7.0       sha256:4b5bf3c2bb7516164f6dcb44acce4fdcb428abfe5771a1128304a0f34ab9ff7c   4b5bf3c2bb75   5 months ago    1.19GB
+alpine                       latest    sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11   5b10f432ef3d   6 months ago    13.1MB
+gradiant/open5gs             2.7.6     sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008   d9d51b3a59ef   15 months ago   381MB

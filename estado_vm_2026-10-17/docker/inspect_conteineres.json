@@ -1,0 +1,3469 @@
+[
+    {
+        "Id": "90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081",
+        "Created": "2026-06-10T14:25:59.502385864Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-upfd",
+            "-c",
+            "/etc/open5gs/upf.yaml"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1840,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.208140037Z",
+            "FinishedAt": "2026-10-15T23:04:50.041736479Z"
+        },
+        "Image": "sha256:4382e594480c2e25ff7866fe8bfd88a0c894502a6fbc8831ab4db2c831ed6a16",
+        "ResolvConfPath": "/var/lib/docker/containers/90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081/hostname",
+        "HostsPath": "/var/lib/docker/containers/90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081/hosts",
+        "LogPath": "/var/lib/docker/containers/90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081/90299178732fe83472d23edefd53a39d825530cd2414cade034cb2903b49e081-json.log",
+        "Name": "/b-upf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/sys/fs/bpf:/sys/fs/bpf:rw",
+                "/lib/modules:/lib/modules:ro",
+                "/sys/kernel/btf:/sys/kernel/btf:ro",
+                "/usr/src:/usr/src:ro",
+                "/sys/kernel/debug:/sys/kernel/debug:rw",
+                "/opt/bcc:/opt/bcc:ro",
+                "/home/bianca/ambiente_5g/config_upf/upf.yaml:/etc/open5gs/upf.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n3",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": [
+                "CAP_NET_ADMIN",
+                "CAP_SYS_ADMIN"
+            ],
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "2,3",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/sys/fs/bpf",
+                "Destination": "/sys/fs/bpf",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/sys/kernel/btf",
+                "Destination": "/sys/kernel/btf",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/sys/kernel/debug",
+                "Destination": "/sys/kernel/debug",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/usr/src",
+                "Destination": "/usr/src",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/bianca/ambiente_5g/config_upf/upf.yaml",
+                "Destination": "/etc/open5gs/upf.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/lib/modules",
+                "Destination": "/lib/modules",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/opt/bcc",
+                "Destination": "/opt/bcc",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "90299178732f",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true",
+                "DEBIAN_FRONTEND=noninteractive"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-upfd",
+                "-c",
+                "/etc/open5gs/upf.yaml"
+            ],
+            "Image": "ambiente_5g-b-upf",
+            "Volumes": null,
+            "WorkingDir": "/etc/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "393e1a8ce0fd23285ae17d99c1b0aa10c4368790f95f20940ceddd90d821af96",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:4382e594480c2e25ff7866fe8bfd88a0c894502a6fbc8831ab4db2c831ed6a16",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.replace": "b-upf",
+                "com.docker.compose.service": "b-upf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "67069aa463ca64b1cbf8c350fb7cf74b163ceb2bbf9870b4855abdccf4d3f9cc",
+            "SandboxKey": "/var/run/docker/netns/67069aa463ca",
+            "Ports": {},
+            "Networks": {
+                "interface-n3": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.130.0.21"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-upf",
+                        "b-upf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "f3f06ef4aacc676172544f5dc913f29f17dc2e5b035099c17394a24a56726506",
+                    "EndpointID": "a9c781216f3ace25ec6f4daad801d93ef5e96e686a32a8571b2d0ea355edd70d",
+                    "Gateway": "10.130.0.1",
+                    "IPAddress": "10.130.0.21",
+                    "MacAddress": "7e:f6:cb:9f:a3:6a",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-upf",
+                        "90299178732f"
+                    ]
+                },
+                "interface-n4": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.140.0.21"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-upf",
+                        "b-upf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "90573d16a7c508ca329275bc52f2855d48b94b5bd94a1f8808dcf789192419b9",
+                    "EndpointID": "ec61dbba31852d75207db3da9bfe2f0ef227098a5914bb7939c9a76ea49ee75a",
+                    "Gateway": "10.140.0.1",
+                    "IPAddress": "10.140.0.21",
+                    "MacAddress": "b2:de:90:b0:0d:47",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-upf",
+                        "90299178732f"
+                    ]
+                },
+                "interface-n6": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.150.0.21"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-upf",
+                        "b-upf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0fc4dd6529306dcf01a0d13237eb9ec6557088d8c137a5ae1d43a11312fcca27",
+                    "EndpointID": "403d14a517a2bdc6147156d3936331d592828a1f9d45070fabf57594a3e44bea",
+                    "Gateway": "10.150.0.1",
+                    "IPAddress": "10.150.0.21",
+                    "MacAddress": "a6:3e:f0:a0:90:d6",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-upf",
+                        "90299178732f"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:2d8d5fa301daf0f3cb331d2463457cc6cb57fa88776907941e4d48dd7bed6bfa",
+            "size": 2195,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a",
+        "Created": "2026-06-10T14:25:59.434279119Z",
+        "Path": "./nr-ue",
+        "Args": [
+            "-c",
+            "/ueransim/config/ue.yaml"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1797,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.195782084Z",
+            "FinishedAt": "2026-10-15T23:04:50.036955058Z"
+        },
+        "Image": "sha256:0a563b238faf0a535a8c45318f1dca65f31fa6175efad9c96cbf2ae0f31a319a",
+        "ResolvConfPath": "/var/lib/docker/containers/fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a/hostname",
+        "HostsPath": "/var/lib/docker/containers/fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a/hosts",
+        "LogPath": "/var/lib/docker/containers/fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a/fc1536eb3ac58c85316148ab1f3e29251885864e783151b817c67b2f3e95915a-json.log",
+        "Name": "/b-ue",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/bianca/ambiente_5g/config_ueransim/ue.yaml:/ueransim/config/ue.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "6,7",
+            "CpusetMems": "",
+            "Devices": [
+                {
+                    "PathOnHost": "/dev/net/tun",
+                    "PathInContainer": "/dev/net/tun",
+                    "CgroupPermissions": "rwm"
+                }
+            ],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/bianca/ambiente_5g/config_ueransim/ue.yaml",
+                "Destination": "/ueransim/config/ue.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "fc1536eb3ac5",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "./nr-ue",
+                "-c",
+                "/ueransim/config/ue.yaml"
+            ],
+            "Image": "ambiente_5g-b-ueransim-ue",
+            "Volumes": null,
+            "WorkingDir": "/ueransim/build",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "6df656281af0ac4353f5bcabbd085f71d66d5cf2ea0949a725844eb0f9ba7e0c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-ueransim-gnb:service_started:false",
+                "com.docker.compose.image": "sha256:0a563b238faf0a535a8c45318f1dca65f31fa6175efad9c96cbf2ae0f31a319a",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.replace": "b-ue",
+                "com.docker.compose.service": "b-ueransim-ue",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "ac6dace72c90127b088a6f161d6362d9dc8536403b482d9a9c0a3e3736cfefe9",
+            "SandboxKey": "/var/run/docker/netns/ac6dace72c90",
+            "Ports": {},
+            "Networks": {
+                "interface-n2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.120.0.200"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-ue",
+                        "b-ueransim-ue"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0e37c27bf3758ac2bf3724e82d8728cdcfe4fd0cc2c4156097a187144267ba48",
+                    "EndpointID": "4df0d1eb0aff5a6f193c5189e66fc939acaf83fe2e0ec26fd9440967a168eaa1",
+                    "Gateway": "10.120.0.1",
+                    "IPAddress": "10.120.0.200",
+                    "MacAddress": "6a:52:9e:17:32:0e",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-ue",
+                        "b-ueransim-ue",
+                        "fc1536eb3ac5"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:2fdef9f8d065d68b9d457ae1359c7fbcb5364d4cbd403b2bd240a2f5c85f7ca4",
+            "size": 1621,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6",
+        "Created": "2026-06-10T14:25:59.379815322Z",
+        "Path": "./nr-gnb",
+        "Args": [
+            "-c",
+            "/ueransim/config/gnb.yaml"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1777,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.196141871Z",
+            "FinishedAt": "2026-10-15T23:04:50.042412859Z"
+        },
+        "Image": "sha256:6f1d6486c5e5a3d3fd16a98567e87f7670b15789a4f86398cc4aef2b2d0a5fdb",
+        "ResolvConfPath": "/var/lib/docker/containers/848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6/hostname",
+        "HostsPath": "/var/lib/docker/containers/848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6/hosts",
+        "LogPath": "/var/lib/docker/containers/848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6/848052c652a6d7c2af7c7aa4becb82ca049bde6ef2a9fd9625c0ede140ae70c6-json.log",
+        "Name": "/b-gnb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/bianca/ambiente_5g/config_ueransim/gnb.yaml:/ueransim/config/gnb.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": [
+                "CAP_NET_ADMIN"
+            ],
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "4,5",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/bianca/ambiente_5g/config_ueransim/gnb.yaml",
+                "Destination": "/ueransim/config/gnb.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "848052c652a6",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "./nr-gnb",
+                "-c",
+                "/ueransim/config/gnb.yaml"
+            ],
+            "Image": "ambiente_5g-b-ueransim-gnb",
+            "Volumes": null,
+            "WorkingDir": "/ueransim/build",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "2f6fe676e8184888743d7fa3d5d9dd1d5d0da997d36fad83d60ead85d3158849",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-amf:service_started:false",
+                "com.docker.compose.image": "sha256:6f1d6486c5e5a3d3fd16a98567e87f7670b15789a4f86398cc4aef2b2d0a5fdb",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.replace": "b-gnb",
+                "com.docker.compose.service": "b-ueransim-gnb",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "d12b4308ed1d3681cd6d02b04a3569ee5802f60a7624157f4efda0b28998a85b",
+            "SandboxKey": "/var/run/docker/netns/d12b4308ed1d",
+            "Ports": {},
+            "Networks": {
+                "interface-n2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.120.0.100"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-gnb",
+                        "b-ueransim-gnb"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0e37c27bf3758ac2bf3724e82d8728cdcfe4fd0cc2c4156097a187144267ba48",
+                    "EndpointID": "cfa8ba91f69aa9b6c5a87c87e141ed0b53d514db58a1171df20ce36b2b217721",
+                    "Gateway": "10.120.0.1",
+                    "IPAddress": "10.120.0.100",
+                    "MacAddress": "2e:56:03:5e:0e:15",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-gnb",
+                        "b-ueransim-gnb",
+                        "848052c652a6"
+                    ]
+                },
+                "interface-n3": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.130.0.100"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-gnb",
+                        "b-ueransim-gnb"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "f3f06ef4aacc676172544f5dc913f29f17dc2e5b035099c17394a24a56726506",
+                    "EndpointID": "8b7880794eef6150bd3fe2312cda02dd16e061a2b9b07051eac7eb5bbd7e7a9a",
+                    "Gateway": "10.130.0.1",
+                    "IPAddress": "10.130.0.100",
+                    "MacAddress": "92:09:f7:f2:0f:6f",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-gnb",
+                        "b-ueransim-gnb",
+                        "848052c652a6"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:a84dc1712eba04f6691ad45ec241a7eda47515490be756df686353766598fb24",
+            "size": 1621,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea",
+        "Created": "2026-06-10T14:25:38.286235784Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-ausfd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1729,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.195233961Z",
+            "FinishedAt": "2026-10-15T23:04:50.035978834Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea/hostname",
+        "HostsPath": "/var/lib/docker/containers/7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea/hosts",
+        "LogPath": "/var/lib/docker/containers/7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea/7e721772c1c4a4dd91a422bf7584314fe82f4c886e577924fe419c95284d1dea-json.log",
+        "Name": "/b-5gc-ausf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "ausf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-ausfd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "2b9da6b40d4eabb04fc28164d478de165d187ca9d0afb0ffbf623472ebaec55f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-mongodb:service_healthy:false,b-nrf:service_started:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-ausf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "4906077c09aa19de5ec40708e8e16c75067ff268746eab57db7fb9f0689ebb93",
+            "SandboxKey": "/var/run/docker/netns/4906077c09aa",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.13"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-ausf",
+                        "b-ausf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "49093876c4e67b2cc4fe813e5ab55a21ff6dcfe41d0f6289ddd76d1077dd92e6",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.13",
+                    "MacAddress": "22:93:4f:4d:b1:fe",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-ausf",
+                        "b-ausf",
+                        "7e721772c1c4",
+                        "ausf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84",
+        "Created": "2026-06-10T14:25:38.285429182Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-udmd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1714,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.210829295Z",
+            "FinishedAt": "2026-10-15T23:04:50.036748201Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84/hostname",
+        "HostsPath": "/var/lib/docker/containers/2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84/hosts",
+        "LogPath": "/var/lib/docker/containers/2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84/2df893ddb6f16fe3f32fd493f6933e3de876e8cc72ac3092438f8447172bbc84-json.log",
+        "Name": "/b-5gc-udm",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "udm",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-udmd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "210a1270afbf8c4b8b11fa2c62321780d072057d4403a27327aa75bdb3887e6f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-nrf:service_started:false,b-mongodb:service_healthy:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-udm",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "5eaef446bd98e839b175fa57b2cc56f4fd3b0c3418920e525a16ff719215626a",
+            "SandboxKey": "/var/run/docker/netns/5eaef446bd98",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.14"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-udm",
+                        "b-udm"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "4af53bd7b0a9ee973d8d1396caf16bd28f894418590999e3d66714e48e0b3f13",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.14",
+                    "MacAddress": "42:85:d2:3e:e3:a5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-udm",
+                        "b-udm",
+                        "2df893ddb6f1",
+                        "udm"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894",
+        "Created": "2026-06-10T14:25:38.285367511Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-amfd",
+            "-c",
+            "/etc/open5gs/amf.yaml"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1802,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.209610503Z",
+            "FinishedAt": "2026-10-15T23:04:50.042008554Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894/hostname",
+        "HostsPath": "/var/lib/docker/containers/835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894/hosts",
+        "LogPath": "/var/lib/docker/containers/835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894/835c176011ea9c673e02683e9321ae3484336801af76d1ce87d194dd5f6a1894-json.log",
+        "Name": "/b-5gc-amf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/bianca/ambiente_5g/config_open5gs/amf.yaml:/etc/open5gs/amf.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/bianca/ambiente_5g/config_open5gs/amf.yaml",
+                "Destination": "/etc/open5gs/amf.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "amf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-amfd",
+                "-c",
+                "/etc/open5gs/amf.yaml"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "2130087c8f42068afbb0d3a0935ea9359bff7ce0c2ad8db7d55a0554072b3aff",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-mongodb:service_healthy:false,b-nrf:service_started:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-amf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "861085b52ab2694cfce96bd38beb9e0bb20556dd4d2af92bf6324c4a899bc184",
+            "SandboxKey": "/var/run/docker/netns/861085b52ab2",
+            "Ports": {},
+            "Networks": {
+                "interface-n2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.120.0.11"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-amf",
+                        "b-amf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0e37c27bf3758ac2bf3724e82d8728cdcfe4fd0cc2c4156097a187144267ba48",
+                    "EndpointID": "9bd5a6d038f72313b05b01f164649ce178d9288465ff8401e53350ba2931638f",
+                    "Gateway": "10.120.0.1",
+                    "IPAddress": "10.120.0.11",
+                    "MacAddress": "02:7b:d3:f9:45:b3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-amf",
+                        "b-amf",
+                        "835c176011ea",
+                        "amf"
+                    ]
+                },
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.11"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-amf",
+                        "b-amf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "3ce58f70278063cd421177c980b01552450a1ae9441d32a34535f95146001d46",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.11",
+                    "MacAddress": "22:5b:eb:7a:0c:89",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-amf",
+                        "b-amf",
+                        "835c176011ea",
+                        "amf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6",
+        "Created": "2026-06-10T14:25:38.285006794Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-nssfd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1559,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.207261218Z",
+            "FinishedAt": "2026-10-15T23:04:50.035813687Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6/hostname",
+        "HostsPath": "/var/lib/docker/containers/cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6/hosts",
+        "LogPath": "/var/lib/docker/containers/cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6/cc9018349f388dca38e71cfec6fd595c591dbf7b99de1340f509f27cc007a7c6-json.log",
+        "Name": "/b-5gc-nssf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "nssf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-nssfd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "e67ea1cb86df71edee9dc6847ef68ea4302e85f6fa818f7bce20d01060341509",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-nrf:service_started:false,b-mongodb:service_healthy:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-nssf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "e3161427a2f593e74792518e6e0d7410574681c19209a08603a999e3a4dd5a77",
+            "SandboxKey": "/var/run/docker/netns/e3161427a2f5",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.17"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-nssf",
+                        "b-nssf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "63ac14e89a28feb535a1602e3f9df17c85c6fa119215f5ab6a13a60b69654baf",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.17",
+                    "MacAddress": "a6:20:65:55:1f:ff",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-nssf",
+                        "b-nssf",
+                        "cc9018349f38",
+                        "nssf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0",
+        "Created": "2026-06-10T14:25:38.284591214Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-udrd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2843,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:53.798197737Z",
+            "FinishedAt": "2026-10-15T23:04:53.356367138Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0/hostname",
+        "HostsPath": "/var/lib/docker/containers/a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0/hosts",
+        "LogPath": "/var/lib/docker/containers/a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0/a47e601d1fc40312fd643c7fdc3adf7a64408878bdf33c58ffd8eced89203fe0-json.log",
+        "Name": "/b-5gc-udr",
+        "RestartCount": 3,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "udr",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-udrd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "8e3b0dcf89de1fb1221b705e234ebf2e98ff0a04d861f689dc60e29ff8946789",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-mongodb:service_healthy:false,b-nrf:service_started:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-udr",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "d32050af9678ada947ffcf5e1a263a5bdf0f277904490935e4c432a280f4c7ed",
+            "SandboxKey": "/var/run/docker/netns/d32050af9678",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.15"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-udr",
+                        "b-udr"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "4587b02e969d9ecaacb22c35b3cb0bcd29e85ee1567face3960ddd4ac0ab698d",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.15",
+                    "MacAddress": "12:cd:1b:c2:48:86",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-udr",
+                        "b-udr",
+                        "a47e601d1fc4",
+                        "udr"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582",
+        "Created": "2026-06-10T14:25:38.284218992Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-smfd",
+            "-c",
+            "/etc/open5gs/smf.yaml"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1572,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.209128112Z",
+            "FinishedAt": "2026-10-15T23:04:50.042515923Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582/hostname",
+        "HostsPath": "/var/lib/docker/containers/d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582/hosts",
+        "LogPath": "/var/lib/docker/containers/d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582/d1be502bb5014d0f32e56e790325a72154ee81fd7693384d4ff1f17a6c3f8582-json.log",
+        "Name": "/b-5gc-smf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/bianca/ambiente_5g/config_open5gs/smf.yaml:/etc/open5gs/smf.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n4",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/bianca/ambiente_5g/config_open5gs/smf.yaml",
+                "Destination": "/etc/open5gs/smf.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "smf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-smfd",
+                "-c",
+                "/etc/open5gs/smf.yaml"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "3a365c056a7b403f50b026cd0a1dab3ba576072ad78c757dd12aa80bf96b4a59",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-nrf:service_started:false,b-mongodb:service_healthy:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-smf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "15cfe86683ff55bb2bcbdc870b1d2b6914cbbefd52551bb2433949ec2b1e641f",
+            "SandboxKey": "/var/run/docker/netns/15cfe86683ff",
+            "Ports": {},
+            "Networks": {
+                "interface-n4": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.140.0.12"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-smf",
+                        "b-smf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "90573d16a7c508ca329275bc52f2855d48b94b5bd94a1f8808dcf789192419b9",
+                    "EndpointID": "d116716b37287d41e49b6ae22d23d0b56c1e6b2685e629245d1d2fb5e08da9ec",
+                    "Gateway": "10.140.0.1",
+                    "IPAddress": "10.140.0.12",
+                    "MacAddress": "5e:4d:c1:ea:43:b9",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-smf",
+                        "b-smf",
+                        "d1be502bb501",
+                        "smf"
+                    ]
+                },
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.12"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-smf",
+                        "b-smf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "f196def211dab6c6ec955d6d692a76c4dc552fea9f413d2b2dab226abeb8eeea",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.12",
+                    "MacAddress": "c6:7c:ba:23:9f:82",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-smf",
+                        "b-smf",
+                        "d1be502bb501",
+                        "smf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429",
+        "Created": "2026-06-10T14:25:38.284184532Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-pcfd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2778,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:53.552922755Z",
+            "FinishedAt": "2026-10-15T23:04:53.11663459Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429/hostname",
+        "HostsPath": "/var/lib/docker/containers/8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429/hosts",
+        "LogPath": "/var/lib/docker/containers/8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429/8b265167c2e538dfd0728ef6a10c7e52298e6a3f890dc0da8b234bb9ec82e429-json.log",
+        "Name": "/b-5gc-pcf",
+        "RestartCount": 3,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "pcf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-pcfd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "d46675daa7976b27337f890a22a3392cb31f50172740287d9be547ace9698801",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-mongodb:service_healthy:false,b-nrf:service_started:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-pcf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "804070fc305dab63ea299cb1c5f0c819a3eb712e62209e7ba6daf8aa5fdcb520",
+            "SandboxKey": "/var/run/docker/netns/804070fc305d",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.16"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-pcf",
+                        "b-pcf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "96e688c0e23b335dbdb51ef3d78543c1f9932595c9af593360d073719336640c",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.16",
+                    "MacAddress": "3e:97:ea:9c:0f:f5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-pcf",
+                        "b-pcf",
+                        "8b265167c2e5",
+                        "pcf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5",
+        "Created": "2026-06-10T14:25:38.284168941Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-scpd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1771,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.20719219Z",
+            "FinishedAt": "2026-10-15T23:04:50.042105631Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5/hostname",
+        "HostsPath": "/var/lib/docker/containers/15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5/hosts",
+        "LogPath": "/var/lib/docker/containers/15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5/15a40dc86bdf4ff0bfa184b38433f4816599608cbcef942d6d4b04b94e53e6e5-json.log",
+        "Name": "/b-5gc-scp",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "scp",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-scpd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "e2e9b2ee66d8962ffcbb7455a2893be9d0ececa090850bb3c2450a159c469a1e",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "b-nrf:service_started:false",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-scp",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "bc22bb19a62671b762391b73081c6f280f34388872c59b661349a97c9dd25a4b",
+            "SandboxKey": "/var/run/docker/netns/bc22bb19a626",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.200"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-scp",
+                        "b-scp"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "3e42aac85c77e79c11c444d774e66895d27ea648f7343487007578f8052b6137",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.200",
+                    "MacAddress": "f6:21:72:b9:ba:a0",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-scp",
+                        "b-scp",
+                        "15a40dc86bdf",
+                        "scp"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9",
+        "Created": "2026-06-10T14:25:38.189551821Z",
+        "Path": "sh",
+        "Args": [
+            "-c",
+            "apk add --no-cache iperf3 iputils && ip route add 10.45.0.0/16 via 10.150.0.21 && tail -f /dev/null"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1753,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.19163533Z",
+            "FinishedAt": "2026-10-15T23:04:50.036021617Z"
+        },
+        "Image": "sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11",
+        "ResolvConfPath": "/var/lib/docker/containers/a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9/hostname",
+        "HostsPath": "/var/lib/docker/containers/a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9/hosts",
+        "LogPath": "/var/lib/docker/containers/a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9/a9623954c93a73788a977e6071dca01d0a153dc13473b6e9e53036c93c067bb9-json.log",
+        "Name": "/b-dn",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-n6",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": [
+                "CAP_NET_ADMIN"
+            ],
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "6,7",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "dn",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "sh",
+                "-c",
+                "apk add --no-cache iperf3 iputils && ip route add 10.45.0.0/16 via 10.150.0.21 && tail -f /dev/null"
+            ],
+            "Image": "alpine:latest",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "7b20502789a5ca83e3bfc644b1a56251f604a334218388c1f79afc9def401449",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-dn",
+                "com.docker.compose.version": "5.1.3"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "692a2006c2faa7614abdfadf2f7ed5cbd0b4f8fdb1ca27e5b799b1d2f6e6f697",
+            "SandboxKey": "/var/run/docker/netns/692a2006c2fa",
+            "Ports": {},
+            "Networks": {
+                "interface-n6": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.150.0.100"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-dn",
+                        "b-dn"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0fc4dd6529306dcf01a0d13237eb9ec6557088d8c137a5ae1d43a11312fcca27",
+                    "EndpointID": "93e8f4b301ab05b2482a995a76791107b92dd30729181a296f60a80bae4c3984",
+                    "Gateway": "10.150.0.1",
+                    "IPAddress": "10.150.0.100",
+                    "MacAddress": "ae:04:82:d5:9f:93",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-dn",
+                        "a9623954c93a",
+                        "dn"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:4d889c14e7d5a73929ab00be2ef8ff22437e7cbc545931e52554a7b00e123d8b",
+            "size": 1022,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.name": "scratch",
+                "org.opencontainers.image.created": "2026-04-15T20:01:12Z",
+                "org.opencontainers.image.revision": "c68e08480b8fb053591ade7dbaffa2ea67db2f56",
+                "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#c68e08480b8fb053591ade7dbaffa2ea67db2f56:x86_64",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+                "org.opencontainers.image.version": "3.23.4"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09",
+        "Created": "2026-06-10T14:25:38.187750895Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mongod"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1710,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.212490591Z",
+            "FinishedAt": "2026-10-15T23:04:50.042131988Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-17T22:58:50.38634887Z",
+                        "End": "2026-10-17T22:58:50.857833508Z",
+                        "ExitCode": 0,
+                        "Output": "{ ok: 1 }\n"
+                    },
+                    {
+                        "Start": "2026-10-17T22:59:00.858465457Z",
+                        "End": "2026-10-17T22:59:01.329643788Z",
+                        "ExitCode": 0,
+                        "Output": "{ ok: 1 }\n"
+                    },
+                    {
+                        "Start": "2026-10-17T22:59:11.330427291Z",
+                        "End": "2026-10-17T22:59:11.844431845Z",
+                        "ExitCode": 0,
+                        "Output": "{ ok: 1 }\n"
+                    },
+                    {
+                        "Start": "2026-10-17T22:59:21.845852699Z",
+                        "End": "2026-10-17T22:59:22.318696134Z",
+                        "ExitCode": 0,
+                        "Output": "{ ok: 1 }\n"
+                    },
+                    {
+                        "Start": "2026-10-17T22:59:32.319903298Z",
+                        "End": "2026-10-17T22:59:32.788389152Z",
+                        "ExitCode": 0,
+                        "Output": "{ ok: 1 }\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:4b5bf3c2bb7516164f6dcb44acce4fdcb428abfe5771a1128304a0f34ab9ff7c",
+        "ResolvConfPath": "/var/lib/docker/containers/0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09/hostname",
+        "HostsPath": "/var/lib/docker/containers/0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09/hosts",
+        "LogPath": "/var/lib/docker/containers/0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09/0f492249afa4acdef912da989853b33b9d7a64295b7a413046487f119dbcbe09-json.log",
+        "Name": "/b-mongodb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "ambiente_5g_mongodb-data:/data/db:rw",
+                "ambiente_5g_mongodb-config:/data/configdb:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "ambiente_5g_mongodb-data",
+                "Source": "/var/lib/docker/volumes/ambiente_5g_mongodb-data/_data",
+                "Destination": "/data/db",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "ambiente_5g_mongodb-config",
+                "Source": "/var/lib/docker/volumes/ambiente_5g_mongodb-config/_data",
+                "Destination": "/data/configdb",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "mongodb",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "27017/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "TZ=America/Recife",
+                "MONGO_INITDB_DATABASE=open5gs",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "JSYAML_VERSION=3.13.1",
+                "JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941",
+                "MONGO_PACKAGE=mongodb-org",
+                "MONGO_REPO=repo.mongodb.org",
+                "MONGO_MAJOR=7.0",
+                "MONGO_VERSION=7.0.34",
+                "HOME=/data/db"
+            ],
+            "Cmd": [
+                "mongod"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "mongosh",
+                    "--eval",
+                    "db.adminCommand('ping')"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 10000000000,
+                "Retries": 5
+            },
+            "Image": "mongo:7.0",
+            "Volumes": {
+                "/data/configdb": {},
+                "/data/db": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "9fb038096788c939e411976150a0a91d9b0282258582a095c09a62653cf646d3",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:4b5bf3c2bb7516164f6dcb44acce4fdcb428abfe5771a1128304a0f34ab9ff7c",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-mongodb",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "ce086cdc10e0fbdcd6c2be60cfcae03ff51030b03395b528667fd241de07eb0d",
+            "SandboxKey": "/var/run/docker/netns/ce086cdc10e0",
+            "Ports": {
+                "27017/tcp": null
+            },
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.20"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-mongodb",
+                        "b-mongodb",
+                        "mongo"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "370051bb71a6ae13847a4410e25d55cd404481eea4d9b033422a69f0b8bdc09b",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.20",
+                    "MacAddress": "36:5a:d4:95:85:97",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-mongodb",
+                        "mongo",
+                        "0f492249afa4",
+                        "mongodb"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:f11d03e9d23a4fa6131dd6a840cb5fb6bbfb557861f9c20f4b5a501192ac1584",
+            "size": 2476,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:ce941a2a18bbb922e434d6d6d2b31e571a5c3826eaf6ada0a41dcc905bd2d906",
+                "org.opencontainers.image.base.name": "ubuntu:jammy",
+                "org.opencontainers.image.created": "2026-05-15T21:19:56Z",
+                "org.opencontainers.image.revision": "7e085e6ef237590c20d826e66d1ddbdaafee5da1",
+                "org.opencontainers.image.source": "https://github.com/docker-library/mongo.git#7e085e6ef237590c20d826e66d1ddbdaafee5da1:7.0",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mongo",
+                "org.opencontainers.image.version": "7.0.34-jammy"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3",
+        "Created": "2026-06-10T14:25:38.184166154Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "/entrypoint.sh",
+            "/opt/open5gs/bin/open5gs-nrfd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1550,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-15T23:04:51.194001137Z",
+            "FinishedAt": "2026-10-15T23:04:50.03611702Z"
+        },
+        "Image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+        "ResolvConfPath": "/var/lib/docker/containers/cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3/hostname",
+        "HostsPath": "/var/lib/docker/containers/cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3/hosts",
+        "LogPath": "/var/lib/docker/containers/cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3/cc19c43fff2b2a56543691128991b81d8b9b11d32996e9fdd33c977cc54630c3-json.log",
+        "Name": "/b-5gc-nrf",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "interface-sbi",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "0,1",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "nrf",
+            "Domainname": "",
+            "User": "open5gs",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/open5gs/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VERSION=2.7.6",
+                "APP_ROOT=/opt/open5gs",
+                "HOME=/opt/open5gs",
+                "DB_URI=mongodb://mongo/open5gs",
+                "IPV4_TUN_SUBNET=10.45.0.0/16",
+                "IPV4_TUN_ADDR=10.45.0.1/16",
+                "IPV6_TUN_ADDR=cafe::1/64",
+                "ENABLE_NAT=true"
+            ],
+            "Cmd": [
+                "/entrypoint.sh",
+                "/opt/open5gs/bin/open5gs-nrfd"
+            ],
+            "Image": "gradiant/open5gs:2.7.6",
+            "Volumes": null,
+            "WorkingDir": "/opt/open5gs",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "288d180fa252ce9b72143b087998c192aa5634e982a8bb25aa34eb60f3c7a3ce",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:d9d51b3a59ef7f19de46ee29e8372bd10b52a4cf2611e2869d88a6558639f008",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ambiente_5g",
+                "com.docker.compose.project.config_files": "/home/bianca/ambiente_5g/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/bianca/ambiente_5g",
+                "com.docker.compose.service": "b-nrf",
+                "com.docker.compose.version": "5.1.3",
+                "org.opencontainers.image.authors": "Carlos Giraldo <cgiraldo@gradiant.org>",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.vendor": "Gradiant",
+                "org.opencontainers.image.version": "2.7.6"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "49ea4ba34e22ba70fbba44871e6fb6234adf1ac7e9f297c9fa0ee879f8a815e7",
+            "SandboxKey": "/var/run/docker/netns/49ea4ba34e22",
+            "Ports": {},
+            "Networks": {
+                "interface-sbi": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.110.0.10"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "b-5gc-nrf",
+                        "b-nrf"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2e762d1b68518f2e8a5e949b948d8f419e48eda950b37f77cf1c0bb0b77cd59b",
+                    "EndpointID": "150231095edaa552da656a305a6e650d007876b29cca28d04929df629a7507d0",
+                    "Gateway": "10.110.0.1",
+                    "IPAddress": "10.110.0.10",
+                    "MacAddress": "76:3c:77:c8:34:ff",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "b-5gc-nrf",
+                        "b-nrf",
+                        "cc19c43fff2b",
+                        "nrf"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:64943bf6a938128eaacf70710176059b218e0073de0c4c88b44db882336a3423",
+            "size": 1813,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
